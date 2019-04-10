@@ -114,7 +114,7 @@ retry those).
 
 It's a more elaborate version of L<HTTP::Tiny::Retry> which offers a simple
 retry strategy: using a constant delay between attempts. HTTP::Tiny::CustomRetry
-uses L<Algorithm::Retry> to offer several retry/backoff strategies.
+uses L<Algorithm::Backoff> to offer several retry/backoff strategies.
 
 
 =head1 ENVIRONMENT
@@ -130,7 +130,7 @@ via HTTP_TINY_CUSTOMRETRY_MAX_ATTEMPTS.
 
 =head1 SEE ALSO
 
-L<Algorithm::Retry> and C<Algorithm::Retry::*> strategy modules.
+L<Algorithm::Backoff> and C<Algorithm::Backoff::*> strategy modules.
 
 L<HTTP::Tiny>
 
