@@ -76,7 +76,7 @@ sub request {
             $res->{status},
             $res->{reason},
             $secs,
-            $self->{_backoff}{_attempts};
+            $self->{_backoff}{_attempts}+1;
         sleep $secs;
     }
     $res;
